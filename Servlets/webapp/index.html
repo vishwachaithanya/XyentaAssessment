@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator Application</title>
+    <style>
+    	body
+        {
+			height: 100%;
+			overflow-y: hidden;
+			background-image: url(ss.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+    	.one
+	    {
+		width: 40%;
+		margin-top: 200px;	
+		}
+		input[type=submit]
+		{
+		margin-left:20px;
+		background-color: #4CAF50;
+		color: white;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size:15px;
+		}
+		input[type=reset]
+		{
+		background-color: gray;
+		color: white;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size:15px;
+		}
+    </style>
+</head>
+<body>
+<center>
+<fieldset class="one">
+	<h3 style="color:red;"><u>Basic Calcualator</u></h3>
+    <form action="app" method="post">
+    <table>
+    <tr>
+       <td> <i>Enter values to calculate (separated by spaces):</i></td>
+       <td> <input type="text" name="input"></td>
+     </tr>  
+
+     </table>  
+     <br> 
+	<input type="reset" value="reset">
+    <input type="submit" value="Calculate">
+    </form>
+    </fieldset>
+    </center>
+</body>
+</html>
