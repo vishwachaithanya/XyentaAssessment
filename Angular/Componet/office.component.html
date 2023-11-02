@@ -1,0 +1,101 @@
+<body>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<mat-toolbar>
+  <button mat-icon-button (click)="sidenav.toggle()">
+  <svg   xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+  </svg>
+  </button>
+  RestCountries &nbsp;
+  <!-- <mat-icon></mat-icon> -->
+  <div class="extra"></div>
+  <mat-icon>share</mat-icon>
+</mat-toolbar>
+<mat-sidenav-container class="sidenav-wrapper" >
+  <mat-sidenav #sidenav mode="side" >
+   <a [routerLink]="['homepg']">
+    <button mat-button class="menu-button" >
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+      </button>
+  </a>
+  <a [routerLink]="['link']" id="three">
+   <button mat-button class="menu-button"  >
+     <mat-icon>person</mat-icon>
+      <span>ResponseData</span>
+    </button>
+    </a>
+    <a [routerLink]="['flag']">
+      <button mat-button>
+        <mat-icon>flag</mat-icon>
+        <span>Flags</span>
+      </button>
+    </a>
+    <a [routerLink]="['map']">
+      <button mat-button>
+        <mat-icon>map</mat-icon>
+        <span>Map</span>
+      </button>
+    </a>
+    <a [routerLink]="['region']">
+      <button mat-button>
+        <mat-icon>accessibility</mat-icon>
+        <span>Region</span>
+      </button>
+    </a>
+<!-- 
+    <a [routerLink]="['home']">
+      <button mat-button>
+        <mat-icon>person</mat-icon>
+        <span>VehicleManagement</span>
+      </button>
+    </a>
+
+    <a [routerLink]="['home']">
+      <button mat-button>
+        <mat-icon>person</mat-icon>
+        <span>EmployeeManagement</span>
+      </button>
+    </a>
+
+    <a [routerLink]="['home']">
+      <button mat-button>
+        <mat-icon>person</mat-icon>
+        <span>TruckOwner</span>
+      </button>
+    </a>
+
+    <a [routerLink]="['home']">
+      <button mat-button>
+        <mat-icon>search</mat-icon>
+        <span>SearchBookingDetails</span>
+      </button>
+    </a>
+
+    <a [routerLink]="['home']">
+      <button mat-button>
+        <mat-icon>report</mat-icon>
+        <span>TruckReports</span>
+      </button>
+    </a>
+
+    <a [routerLink]="['home']">
+      <button mat-button>
+        <mat-icon>report</mat-icon>
+        <span>TravelerReports</span>
+      </button>
+    </a>
+
+    <a [routerLink]="['home']">
+      <button mat-button>
+        <mat-icon>report</mat-icon>
+        <span>DriverReports</span>
+      </button>
+    </a> -->
+  </mat-sidenav>
+  <mat-sidenav-content class="content">                              
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+</body>
+

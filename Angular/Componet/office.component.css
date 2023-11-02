@@ -1,0 +1,101 @@
+/* body{
+  background-image: url("../../../assets/img/worldd.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+} */
+mat-toolbar {
+    background: #004a9f;
+    color: white;
+  } 
+  .extra{
+    flex: 1 1 auto;
+  }
+   mat-sidenav {
+    margin: 16px;
+    width: 240px;
+    border-right: none;
+    background: #002b5c;
+    color: white;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: left;
+  }
+  .content {
+    height: calc(100vh - 98px);
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 32px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    color: lightgray;
+    /* background: url("./../../../assets/img/truckk.png");
+    background-repeat: no-repeat;
+    background-size: 100% 600px; */
+    /* background-position: 300px 2px; */
+    /* background-color:lightgray; */
+    /* font-size: 2rem; */
+  }
+  
+  mat-sidenav-container {
+    height: calc(100vh - 65px);
+  }
+  .sidenav-wrapper{
+    position:absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+  }
+a{
+  text-decoration: none;
+}
+
+
+.mat-drawer-content {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 100% !important;
+  overflow: auto !important;
+}
+  
+  button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+ 
+  }
+ 
+    /* mat-icon {
+      margin-right: 8px;
+    }
+  }
+  
+  .avatar {
+    margin-top: 16px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .name {
+    margin-top: 8px;
+    font-weight: normal;
+  }
+  
+  .designation {
+    margin-top: 2px;
+    font-size: 0.7rem;
+    color: lightgrey;
+  }
+  
+  mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+     */ 
