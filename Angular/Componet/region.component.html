@@ -1,0 +1,37 @@
+<h3>Countries and their region</h3>
+
+<div class="container" style="margin-top:10px">
+    <table class="table" style="table-layout:fixed">
+        <thead>
+            <tr>
+                <th scope="col">CountryFlag</th>
+                <th scope="col">CountryName</th>
+                <th scope="col">Capital</th>
+                <th scope="col">Continent</th>
+                <!-- <th scope="col">Population</th> -->
+                <!-- <th scope="col">LanguagesSpoken</th> -->
+                <!-- <th scope="col">Currencies</th> -->
+                <!-- <th scope="col">Maps</th> -->
+                <!-- <th scope="col">TimeZone</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let x of message">
+                <td><img src="{{x.flags.png}}" style="width:80px;"></td>
+                <td>{{x.name.common}}</td>
+                <td>{{x.capital}}</td>
+                <td>{{x.continents}}</td>
+              
+                <!-- <td>{{x.population}}</td> -->
+                <!-- <td>{{x.languages |json}}</td> -->
+               
+                <!-- <td>{{x.currencies|json}}</td> -->
+              
+                <!-- <td><a href="{{x.maps.googleMaps}}">{{x.name.common}}</a></td> -->
+                <!-- <td>{{x.timezones}}</td> -->
+               
+            </tr>
+        </tbody>
+    </table>
+</div>
+
