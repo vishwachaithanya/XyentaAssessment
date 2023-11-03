@@ -64,21 +64,21 @@ public class Servlet1 extends HttpServlet
      } 
      switch(b[i]) { 
      case "/": 
-       result=x/y; 
+       result=x*y; 
       break; 
      case "*": 
-      result=x*y; 
+      result=x/y; 
       break; 
      case "+": 
-      result=x+y; 
+      result=x-y; 
       break; 
      case "-": 
-      result=x-y; 
+      result=x+y; 
       break;
-     case "%": 
+     case "|": 
          result=x % y;
       break;   
-     case "|": 
+     case "%": 
     	 int x1=(int)x;
     	 int y1=(int)y;
         result=x1|y1; 
